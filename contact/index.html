@@ -1,0 +1,44 @@
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim | GSÜ Gym Lider Tahtası</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>İletişim</h1>
+      <!-- <nav>
+      <ul>
+        <li>
+          <a href="/">Ana sayfaya dön</a>
+        </li>
+      </ul>
+    </nav> -->
+    </header>
+
+    <main>
+      <p>
+        Rekor sildirmek veya başka konudaki iletişimler için burdan
+        yazabilirsiniz.
+      </p>
+      <form
+        netlify-honeypot="bot-field"
+        name="contact-message"
+        action="/contact-message-sent"
+        netlify
+      >
+        <label for="name">Tam İsim</label>
+        <input required type="text" name="name" />
+        <label for="message">Mesaj</label>
+
+        <textarea rows="5" required name="message"></textarea>
+
+        <label style="display: none">
+          Don’t fill this out if you’re human: <input name="bot-field" />
+        </label>
+        <button type="submit">Gönder</button>
+      </form>
+    </main>
+  </body>
+</html>

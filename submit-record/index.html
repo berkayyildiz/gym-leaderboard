@@ -1,0 +1,71 @@
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rekorunu Gönder | GSÜ Gym Lider Tahtası</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rekorunu Gönder</h1>
+      <!-- <nav>
+        <ul>
+          <li>
+            <a href="/">Ana sayfaya dön</a>
+          </li>
+        </ul>
+      </nav> -->
+    </header>
+
+    <main>
+      <form
+        netlify-honeypot="bot-field"
+        name="send-record"
+        action="/record-submitted"
+        netlify
+      >
+        <p>
+          Rekorun GSÜ spor salonunda gerçekleştirilmiş olması gerekiyor. Eğer
+          varsa video veya fotoğraf linki ekleyebilirsiniz .
+        </p>
+        <label for="name">Tam İsim / Nom et prénom</label>
+        <input required type="text" name="name" />
+        <label for="sex">Cinsiyet / Genre</label>
+        <select name="sex">
+          <option value="man">Erkek / Genre</option>
+          <option value="woman">Kadın / Femme</option>
+          <option value="non-binary">Non binaire</option>
+        </select>
+        <label for="exerciece"
+          >Hareket ve Yapılış Tarzı / Style de mouvement et de
+          construction</label
+        >
+
+        <input required type="text" name="exerciece" />
+        <p class="helper">
+          Harketin adı ve ne şekilde yapıldığı, Barbell Bench Press (Bir Tekrar)
+          veya Dumbell Incline Bench Press (Maks tekrar + ağırlık) gibi
+          olabilir, Plank (Süre), Pull Up (Ağırlıksız) vb. Makine ise makine
+          adı.
+        </p>
+        <label for="detail"
+          >Kg, Tekrar, Süre Detayı / Kg, Répétition, Détails de la Durée</label
+        >
+        <input required type="text" name="detail" />
+        <p class="helper">
+          30kg x 5 tekrar, ağırlıksız 10 tekrar, 5 dakika vb.
+        </p>
+        <label for="video-link"
+          >Video veya Fotoğraf Linki / Lien vidéo ou photo
+          <small>(opsiyonel)</small>
+        </label>
+        <input type="text" name="video-link" />
+
+        <label style="display: none">
+          Don’t fill this out if you’re human: <input name="bot-field" />
+        </label>
+        <button type="submit">Gönder</button>
+      </form>
+    </main>
+  </body>
+</html>

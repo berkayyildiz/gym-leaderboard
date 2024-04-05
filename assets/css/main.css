@@ -1,0 +1,39 @@
+label {
+  display: block;
+  margin-bottom: .25rem;
+  margin-top: .5rem;
+}
+.helper {
+  font-size: .8rem;
+  margin: .125rem 0 0 0;
+  max-width: 20rem;
+  
+}
+form {
+  max-width: 15rem;
+}
+input, textarea, select {
+  width: 100%;
+}
+form button {
+margin: .75rem 0;
+}
+
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: .25rem 0.75rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+button {
+  display: block;
+}
